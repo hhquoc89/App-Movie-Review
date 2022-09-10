@@ -1,0 +1,3 @@
+class AppManager {
+  String? apiToken;
+}
