@@ -15,7 +15,6 @@ class Info extends StatelessWidget {
     final args = ModalRoute.of(context)!.settings.arguments as num;
     personDetailCubit.getPersonDetail(args);
     return Container(
-      color: Colors.yellow,
       alignment: Alignment.topLeft,
       width: double.infinity,
       padding: const EdgeInsets.all(20),
