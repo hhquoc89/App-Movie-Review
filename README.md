@@ -8,12 +8,13 @@
 ![image](https://user-images.githubusercontent.com/83216140/189467854-9202bb0a-fae9-467a-b18c-568a604e39e7.png)
 ![image](https://user-images.githubusercontent.com/83216140/189467860-a41558cd-34a6-48bd-9171-6098016df1e2.png)
 ![image](https://user-images.githubusercontent.com/83216140/189467892-fa03b794-050f-4727-8d83-7529551d8b5d.png)
-
-
+![image](https://user-images.githubusercontent.com/83216140/189467976-affb6216-5b2b-444e-a244-7f6a59adab6f.png)
 # Technologies:
 - BloC to manage state
 - API : https://www.themoviedb.org/documentation/api
 # Features:
+- Login user in TheMovieDB user
+- Search film
 - See the information of list movie or TV series
 - See the detail information of person 
 - Keep user when user logged 
