@@ -46,11 +46,11 @@ class TopBill extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     shrinkWrap: true,
                     itemBuilder: (context, index) {
-                      final cast = casts?[index];
+                      final cast = casts![index];
                       return InkWell(
                         onTap: () {
                           Navigator.pushNamed(context, RouteName.personDetail,
-                              arguments: cast?.id);
+                              arguments: cast.id);
                         },
                         child: Container(
                           decoration: BoxDecoration(
@@ -88,14 +88,14 @@ class TopBill extends StatelessWidget {
                                       MainAxisAlignment.spaceBetween,
                                   children: [
                                     Text(
-                                      cast?.name ?? '',
+                                      cast.name ?? '',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold),
                                     ),
                                     SizedBox(
                                       height: 10,
                                     ),
-                                    Text(cast?.character ?? ''),
+                                    Text(cast.character ?? ''),
                                   ],
                                 ),
                               )

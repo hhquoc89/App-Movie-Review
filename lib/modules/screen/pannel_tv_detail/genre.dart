@@ -16,8 +16,8 @@ class Genre extends StatelessWidget {
   covertRuntime() {
     final _runtime = tvDetailModel.episodeRunTime ?? [1];
     if (_runtime != []) {
-      num hour = _runtime.first ~/ 60;
-      num min = _runtime.first % 60;
+      int hour = _runtime.first ~/ 60;
+      int min = _runtime.first % 60;
       String _convertRuntime = '';
       if (hour > 0) {
         return _convertRuntime = '$hour' 'h' '$min';

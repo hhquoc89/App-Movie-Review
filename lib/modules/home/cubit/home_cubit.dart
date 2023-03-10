@@ -19,7 +19,6 @@ class HomeCubit extends Cubit<HomeState> {
       } else {
         emit(HomeSuccess(const []));
       }
-      
 
       // }
     } catch (e) {
@@ -35,7 +34,6 @@ class HomeCubit extends Cubit<HomeState> {
       } else {
         emit(HomeSuccess(const []));
       }
-      print(response!.totalResults);
     } catch (e) {
       emit(HomeSuccess([]));
     }

@@ -160,8 +160,19 @@ class _SearchScreenState extends State<SearchScreen> {
                       itemCount: listResults.length,
                       itemBuilder: (context, index) {
                         final results = listResults[index];
-                        return ListTile(
-                          title: Text(results.originalTitle ?? " "),
+                        return InkWell(
+                          onTap: () {
+                            if (results.mediaType == 'movie') {
+                              Navigator.pushNamed(
+                                  context, RouteName.movieDetail,
+                                  arguments: results);
+                            }
+                            Navigator.pushNamed(context, RouteName.movieDetail,
+                                arguments: results);
+                          },
+                          child: ListTile(
+                            title: Text(results.originalTitle ?? " "),
+                          ),
                         );
                       });
                 },
